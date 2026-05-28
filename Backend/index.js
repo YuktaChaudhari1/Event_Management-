@@ -11,7 +11,13 @@ dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+app.use(
+  cors({
+    origin: "https://your-frontend-url.onrender.com",
+    credentials: true,
+  }),
+);
 
 //Routes
 app.use("/api/auth", authRoutes);
@@ -37,6 +43,5 @@ app.listen(PORT, () => {
 app.get("/", (req, res) => {
   res.send("Eventora Backend API Running 🚀");
 });
-
 
 module.exports = app;
