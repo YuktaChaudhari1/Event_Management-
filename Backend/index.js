@@ -12,12 +12,13 @@ dns.setServers(["1.1.1.1", "8.8.8.8"]);
 const app = express();
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: "https://your-frontend-url.onrender.com",
-    credentials: true,
-  }),
-);
+
+app.use(cors({
+  origin: "https://event-management-1-xp6o.onrender.com",
+  credentials: true,
+}));
+
+
 
 //Routes
 app.use("/api/auth", authRoutes);
