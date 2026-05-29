@@ -5,9 +5,6 @@ A full-stack Event Management System built using the MERN stack. This project al
 ## Live Demo
 
 Frontend: https://event-management-1-xp6o.onrender.com
-
-Backend API: https://eventora-backend-r4bm.onrender.com
-
 ---
 
 ## Project Overview
